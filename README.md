@@ -1,4 +1,4 @@
-# Post Mockup App 🍨 🎉 [Live](https://cyberdude-post-mockup.vercel.app)
+# Post Mockup App 🍨 🎉 [Live](https://post-mockup.vercel.app/)
 
 [![Stars](https://img.shields.io/github/stars/anburocky3/post-mockup-app)](https://github.com/anburocky3/post-mockup-app)
 [![Forks](https://img.shields.io/github/forks/anburocky3/post-mockup-app)](https://github.com/anburocky3/post-mockup-app)
@@ -9,7 +9,7 @@
 
 Create stunning post mockups for your social networks.
 
-#### Screenshots ([🎉👉 Live here](https://cyberdude-post-mockup.vercel.app) )
+#### Screenshots ([🎉👉 Live here](https://post-mockup.vercel.app/) )
 
 > #1 - `Simple GUI` that makes the process easier!
 
@@ -21,9 +21,9 @@ Create stunning post mockups for your social networks.
 
 ## 🎉 Check it yourself!
 
-| 🚧 Build Status  |                                          |
-| ---------------- | :--------------------------------------- |
-| ✅ Live Website: | https://cyberdude-post-mockup.vercel.app |
+| 🚧 Build Status  |                                 |
+| ---------------- | :------------------------------ |
+| ✅ Live Website: | https://post-mockup.vercel.app/ |
 
 ---
 
