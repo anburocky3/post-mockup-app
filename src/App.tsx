@@ -243,9 +243,9 @@ const App = () => {
                   <img
                     src={URL.createObjectURL(file)}
                     alt={user.name}
-                    className={`rounded-full w-14 h-14 sm:w-20 sm:h-20 ${
+                    className={`rounded-full w-14 h-14 sm:w-20 sm:h-20 object-cover ${
                       user.imageBorder
-                        ? "border sm:border-2 object-cover bg-gradient-to-b from-blue-500 to-pink-500 p-1"
+                        ? "border sm:border-2  bg-gradient-to-b from-blue-500 to-pink-500 p-1"
                         : ""
                     }`}
                   />
@@ -253,9 +253,9 @@ const App = () => {
                   <img
                     src={`https://ui-avatars.com/api/?name=${user.name}&background=random`}
                     alt={user.name}
-                    className={`rounded-full w-14 h-14 sm:w-20 sm:h-20 ${
+                    className={`rounded-full w-14 h-14 sm:w-20 sm:h-20 object-cover  ${
                       user.imageBorder
-                        ? "border sm:border-2 object-cover bg-gradient-to-b from-blue-500 to-pink-500 p-1"
+                        ? "border sm:border-2 bg-gradient-to-b from-blue-500 to-pink-500 p-1"
                         : ""
                     }`}
                   />

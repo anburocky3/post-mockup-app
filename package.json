@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "live": "start https://post-mockup.vercel.app"
+
   },
   "dependencies": {
     "@uiw/react-md-editor": "^4.0.3",
