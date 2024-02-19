@@ -234,7 +234,7 @@ const App = () => {
           </div>
 
           <div
-            className="bg-white dark:bg-gray-800 p-5 sm:p-10 rounded"
+            className="bg-gray-50 dark:bg-gray-800 p-5 sm:p-10 rounded"
             ref={ref}
           >
             <div className="bg-white dark:bg-gray-900 p-5 sm:p-10 border dark:border-none rounded shadow">
@@ -243,9 +243,9 @@ const App = () => {
                   <img
                     src={URL.createObjectURL(file)}
                     alt={user.name}
-                    className={`rounded-full w-14 h-14 sm:w-20 sm:h-20 border sm:border-2 object-cover ${
+                    className={`rounded-full w-14 h-14 sm:w-20 sm:h-20 ${
                       user.imageBorder
-                        ? "bg-gradient-to-b from-blue-500 to-pink-500 p-1"
+                        ? "border sm:border-2 object-cover bg-gradient-to-b from-blue-500 to-pink-500 p-1"
                         : ""
                     }`}
                   />
@@ -253,9 +253,9 @@ const App = () => {
                   <img
                     src={`https://ui-avatars.com/api/?name=${user.name}&background=random`}
                     alt={user.name}
-                    className={`rounded-full w-14 h-14 sm:w-20 sm:h-20 border sm:border-2 object-cover ${
+                    className={`rounded-full w-14 h-14 sm:w-20 sm:h-20 ${
                       user.imageBorder
-                        ? "bg-gradient-to-b from-blue-500 to-pink-500 p-1"
+                        ? "border sm:border-2 object-cover bg-gradient-to-b from-blue-500 to-pink-500 p-1"
                         : ""
                     }`}
                   />
@@ -264,25 +264,25 @@ const App = () => {
                 <div className="mt-2">
                   <p className="text-lg sm:text-2xl font-bold dark:text-white">
                     {user.name}
+                    {user.verified && (
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 16 16"
+                        className="text-blue-500 inline-block fill-current ml-2"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M15.67 7.066l-1.08-1.34a1.5 1.5 0 0 1-.309-.77l-.19-1.698a1.51 1.51 0 0 0-1.329-1.33l-1.699-.19c-.3-.03-.56-.159-.78-.329L8.945.33a1.504 1.504 0 0 0-1.878 0l-1.34 1.08a1.5 1.5 0 0 1-.77.31l-1.698.19c-.7.08-1.25.63-1.33 1.329l-.19 1.699c-.03.3-.159.56-.329.78L.33 7.055a1.504 1.504 0 0 0 0 1.878l1.08 1.34c.17.22.28.48.31.77l.19 1.698c.08.7.63 1.25 1.329 1.33l1.699.19c.3.03.56.159.78.329l1.339 1.08c.55.439 1.329.439 1.878 0l1.34-1.08c.22-.17.48-.28.77-.31l1.698-.19c.7-.08 1.25-.63 1.33-1.329l.19-1.699c.03-.3.159-.56.329-.78l1.08-1.339a1.504 1.504 0 0 0 0-1.878zM6.5 12.01L3 8.51l1.5-1.5l2 2l5-5L13 5.56l-6.5 6.45z"
+                        />
+                      </svg>
+                    )}
                   </p>
                   <small className="text-base sm:text-xl font-light dark:text-white">
                     {user.role}
                   </small>
                 </div>
-                {user.verified && (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 16 16"
-                    className="text-blue-500 fill-current -ml-2 mt-3"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M15.67 7.066l-1.08-1.34a1.5 1.5 0 0 1-.309-.77l-.19-1.698a1.51 1.51 0 0 0-1.329-1.33l-1.699-.19c-.3-.03-.56-.159-.78-.329L8.945.33a1.504 1.504 0 0 0-1.878 0l-1.34 1.08a1.5 1.5 0 0 1-.77.31l-1.698.19c-.7.08-1.25.63-1.33 1.329l-.19 1.699c-.03.3-.159.56-.329.78L.33 7.055a1.504 1.504 0 0 0 0 1.878l1.08 1.34c.17.22.28.48.31.77l.19 1.698c.08.7.63 1.25 1.329 1.33l1.699.19c.3.03.56.159.78.329l1.339 1.08c.55.439 1.329.439 1.878 0l1.34-1.08c.22-.17.48-.28.77-.31l1.698-.19c.7-.08 1.25-.63 1.33-1.329l.19-1.699c.03-.3.159-.56.329-.78l1.08-1.339a1.504 1.504 0 0 0 0-1.878zM6.5 12.01L3 8.51l1.5-1.5l2 2l5-5L13 5.56l-6.5 6.45z"
-                    />
-                  </svg>
-                )}
               </div>
               <div className="p-3">
                 {/* <p className="p-3 justify-stretch">{user.description}</p> */}
